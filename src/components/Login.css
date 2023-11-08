@@ -1,0 +1,143 @@
+/* Apply basic styling to the container */
+.box {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the heading */
+  .login-input {
+    text-align: center;
+  }
+  
+  /* Style the error message */
+  .alert {
+    margin-top: 10px;
+  }
+  
+  /* Style the form inputs */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Style the submit button */
+  .d-grid.login-input .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Style the Google sign-in button */
+  .g-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Style the "Sign up" link */
+  .text-center {
+    margin-top: 15px;
+  }
+  
+  
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style the input fields on focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Style the Google sign-in button */
+.g-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Style the container */
+.d-grid.login-input {
+    position: relative;
+  }
+  
+  /* Style the submit button */
+  .d-grid.login-input .btn-primary {
+    background-color: rgb(62, 131, 242); /* Blue background color similar to Google button */
+    border: none;
+    border-radius: 2px;
+    color: #fff; /* White text color */
+    font-size: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Add a little letter spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    overflow: hidden; /* Hide overflow for animation */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    position: relative; /* Required for pseudo-element animation */
+    z-index: 1; /* Place above pseudo-element */
+  }
+  
+  /* Create a cute slider pseudo-element */
+  .d-grid.login-input .btn-primary::before {
+    content: '';
+    background-color: rgb(5, 32, 57); /* Reddish-pink color for slider */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; /* Initial width is 0 */
+    height: 100%;
+    transition: width 0.3s ease; /* Transition for slider animation */
+    z-index: -1; /* Place below the button */
+  }
+  
+  /* Add cute slider animation on hover */
+  .d-grid.login-input .btn-primary:hover::before {
+    width: 100%; /* Expand the slider to full width on hover */
+  }
+  
+  /* Add a button press effect */
+  .d-grid.login-input .btn-primary:active {
+    transform: translateY(2px); /* Push the button down slightly */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the shadow */
+  }
+  
+  /* Disable button pointer events and reduce opacity when submitting */
+  .d-grid.login-input .btn-primary[disabled] {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  /* Login.css or your custom CSS file */
+.heading {
+    font-size: 1rem;
+    color: #333; /* Set your desired text color */
+    text-align: center;
+    animation: fadeIn 2s ease; /* Add a fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
