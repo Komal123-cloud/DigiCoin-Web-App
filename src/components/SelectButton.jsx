@@ -1,31 +1,26 @@
-// import { makeStyles } from "@mui/material";
+import { makeStyles } from "@material-ui/core";
 
-// const SelectButton = ({ children, selected, onClick }) => {
-//   const useStyles = makeStyles({
-//     selectbutton: {
-//       border: "1px solid gold",
-//       borderRadius: 5,
-//       padding: 10,
-//       paddingLeft: 20,
-//       paddingRight: 20,
-//       fontFamily: "Montserrat",
-//       cursor: "pointer",
-//       backgroundColor: selected ? "gold" : "",
-//       color: selected ? "black" : "",
-//       fontWeight: selected ? 700 : 500,
-//       "&:hover": {
-//         backgroundColor: "gold",
-//         color: "black",
-//       },
-//       width: "22%",
-//       //   margin: 5,
-//     },
-//   });
+const SelectButton = ({ children, selected, onClick }) => {
+  const useStyles = makeStyles({
+    selectbutton: {
+      border: "1px solid gold",
+      borderRadius: 5,
+      padding: 10,
+      fontFamily: "Montserrat",
+      cursor: "pointer",
+      backgroundColor: selected ? "gold" : "",
+      color: selected ? "black" : "",
+      fontWeight: selected ? 700 : 500,
+      "&:hover": {
+        backgroundColor: "gold",
+        color: "black",
+      },
+      width: "23%",
+      textAlign: "center",
+    },
+  });
 
- // const classes = useStyles();
- import './selectbutton.css'
- const SelectButton = ({ children, selected, onClick }) => {
-    const classes = ["selectbutton", selected ? "selected" : ""].join(" ");
+  const classes = useStyles();
 
   return (
     <span onClick={onClick} className={classes.selectbutton}>

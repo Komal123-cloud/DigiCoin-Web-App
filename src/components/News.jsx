@@ -173,7 +173,7 @@ import Modal from './Modal/Modal';
 import NewsCards from './NewsCards/NewsCards';
 import useStyles from '../styles';
 
-const App = () => {
+const News = () => {
   const [activeArticle, setActiveArticle] = useState(0);
   const [newsArticles, setNewsArticles] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -182,7 +182,7 @@ const App = () => {
 
   useEffect(() => {
     alanBtn({
-      key: '85559d773faa7bba3157162cf75a8b152e956eca572e1d8b807a3e2338fdd0dc/stage',
+      key: 'f32f7e68419a55c351cf19e2a01388812e956eca572e1d8b807a3e2338fdd0dc/stage',
       onCommand: ({ command, articles, number }) => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
@@ -217,7 +217,7 @@ const App = () => {
             <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Go back</Typography></div>
           </div>
         ) : null}
-        <img src="https://voicebot.ai/wp-content/uploads/2019/10/alan.jpg" className={classes.alanLogo} alt="logo" />
+        {/* <img src="https://voicebot.ai/wp-content/uploads/2019/10/alan.jpg" className={classes.alanLogo} alt="logo" /> */}
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -235,4 +235,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default News;

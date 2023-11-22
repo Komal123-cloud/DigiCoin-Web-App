@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className='logo-container'>
             <Avatar src={icon} size="medium"/>
             <Typography.Title level={3} className='logo'>
-                <Link to="/home">DigiCoin</Link>
+                DigiCoin
             </Typography.Title>   
         </div> 
         

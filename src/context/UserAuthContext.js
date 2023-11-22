@@ -7,12 +7,51 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth,db } from "../firebase";
+import axios from "axios";
+import { CoinList } from "../components/config/api";
+import { onSnapshot, doc } from "firebase/firestore";
 
 const userAuthContext = createContext();
 
 export function UserAuthContextProvider({ children }) {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null);
+  const [coins, setCoins] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState({
+    open: false,
+    message: "",
+    type: "success",
+  });
+  const [watchlist, setWatchlist] = useState([]);
+
+
+  useEffect(() => {
+    if (user) {
+      const coinRef = doc(db, "watchlist", user?.uid);
+      var unsubscribe = onSnapshot(coinRef, (coin) => {
+        if (coin.exists()) {
+          console.log(coin.data().coins);
+          setWatchlist(coin.data().coins);
+        } else {
+          console.log("No Items in Watchlist");
+        }
+      });
+
+      return () => {
+        unsubscribe();
+      };
+    }
+  }, [user]);
+
+  const fetchCoins = async () => {
+    setLoading(true);
+    const { data } = await axios.get(CoinList("usd"));
+    console.log(data);
+
+    setCoins(data);
+    setLoading(false);
+  };
 
   function logIn(email, password) {
     return signInWithEmailAndPassword(auth, email, password);
@@ -30,8 +69,9 @@ export function UserAuthContextProvider({ children }) {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
+      if(currentuser) setUser(currentuser);
+      else setUser(null);
       console.log("Auth", currentuser);
-      setUser(currentuser);
     });
 
     return () => {
@@ -41,7 +81,7 @@ export function UserAuthContextProvider({ children }) {
 
   return (
     <userAuthContext.Provider
-      value={{ user, logIn, signUp, logOut, googleSignIn }}
+      value={{ user, logIn, signUp, logOut, googleSignIn,coins,loading ,fetchCoins,alert,setAlert,watchlist}}
     >
       {children}
     </userAuthContext.Provider>

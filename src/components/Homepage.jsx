@@ -9,6 +9,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 import "../components/Login.css"
+import UserSidebar from './UserSidebar'
 
 
 const {Title} = Typography;
@@ -49,12 +50,13 @@ const Homepage = () => {
         <Col span={12}><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)}/></Col>
       </Row> */}
       <div className='home-heading-container'>
+      <UserSidebar/>
     
 
        
-      <Button className="logout-button" variant="primary" onClick={handleLogout}>
+      {/* <Button className="logout-button" variant="primary" onClick={handleLogout}>
         Log out
-      </Button>
+      </Button> */}
    
       
       
