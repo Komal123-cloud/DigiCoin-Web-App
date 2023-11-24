@@ -161,7 +161,9 @@ export default function UserSidebar() {
                 <div className={classes.watchlist}>
                   <span style={{ fontSize: 15, textShadow: "0 0 5px black" }}>
                     Watchlist
+                    {console.log(watchlist)}
                   </span>
+                  
                   {coins.map((coin) => {
                     if (watchlist.includes(coin.id))
                       return (

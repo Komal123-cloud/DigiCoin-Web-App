@@ -22,14 +22,10 @@ const CoinPage = () => {
 
   const {user, setAlert, watchlist } = useUserAuth();
 
-  const fetchCoin = async () => {
-    const { data } = await axios.get(SingleCoin(id));
-
-    setCoin(data);
-  };
+  
 
   const inWatchlist = watchlist.includes(coin?.id);
-
+  console.log(inWatchlist)
   const addToWatchlist = async () => {
     const coinRef = doc(db, "watchlist", user.uid);
     try {
@@ -77,9 +73,14 @@ const CoinPage = () => {
   };
 
   useEffect(() => {
+    const fetchCoin = async () => {
+      const { data } = await axios.get(SingleCoin(id));
+  
+      setCoin(data);
+    };
     fetchCoin();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [id]);
 
   const useStyles = makeStyles((theme) => ({
     container: {

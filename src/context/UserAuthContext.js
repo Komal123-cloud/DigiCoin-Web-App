@@ -52,6 +52,9 @@ export function UserAuthContextProvider({ children }) {
     setCoins(data);
     setLoading(false);
   };
+  useEffect(()=>{
+    fetchCoins();
+  },[]);
 
   function logIn(email, password) {
     return signInWithEmailAndPassword(auth, email, password);
