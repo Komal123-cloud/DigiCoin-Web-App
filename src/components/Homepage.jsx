@@ -8,8 +8,8 @@ import Cryptocurrencies from './Cryptocurrencies';
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
-import "../components/Login.css"
 import UserSidebar from './UserSidebar'
+import './Homepage.css'
 
 
 const {Title} = Typography;
@@ -60,7 +60,9 @@ const Homepage = () => {
    
       
       
-        <Title level={2} className='home-title'>Top 10 Cryptocurrencies in the world</Title>
+   <Typography.Title level={2} className='home-title animated-text' styles={{color: '#3498db'}}>
+    Top Crypto Players
+</Typography.Title>
         <Title level={3} className='show-more'><Link to="/cryptocurrencies">Show More</Link></Title>
       </div>
       <Cryptocurrencies simplified/>

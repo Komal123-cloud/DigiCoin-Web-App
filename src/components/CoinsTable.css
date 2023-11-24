@@ -1,0 +1,44 @@
+/* CSS for Pagination */
+.pagination-root {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* CSS for Pagination items */
+  .pagination-root .MuiPaginationItem-root {
+    border-radius: 50%;
+    color: #fff;
+    background-color: #19a1e0;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  /* Hover effect for Pagination Item */
+  .pagination-root .MuiPaginationItem-root:hover {
+    background-color: #4bcffa;
+  }
+  
+  /* Selected Pagination Item */
+  .pagination-root .Mui-selected {
+    background-color: #1496b3 !important;
+  }
+  
+  /* Disabled Pagination Item */
+  .pagination-root .Mui-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  
+  /* Styling for Pagination link */
+  .pagination-root .MuiPaginationItem-root:hover,
+  .pagination-root .MuiPaginationItem-root:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+  

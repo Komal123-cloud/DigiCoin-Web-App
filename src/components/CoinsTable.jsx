@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { styled } from "@mui/system";
 import Pagination from "@mui/material/Pagination";
+import './CoinsTable.css';
 import {
   Container,
   createTheme,
@@ -54,7 +55,7 @@ export default function CoinsTable() {
       primary: {
         main: "#fff",
       },
-      mode: "dark",
+      mode: "light",
     },
   });
 
@@ -92,7 +93,9 @@ export default function CoinsTable() {
         <TextField
           label="Search For a Crypto Currency.."
           variant="outlined"
-          style={{ marginBottom: 20, width: "100%" }}
+          InputLabelProps={{
+            style: { color: 'black' }}}
+          style={{ marginBottom: 20, width: "100%",}}
           onChange={(e) => setSearch(e.target.value)}
         />
         <TableContainer component={Paper}>
@@ -189,19 +192,19 @@ export default function CoinsTable() {
 
         {/* Comes from @mui/material */}
         <Pagination
-          count={Math.floor((handleSearch()?.length / 10))}
-          style={{
-            padding: 20,
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-          classes={{ ul: classes.pagination }}
-          onChange={(_, value) => {
-            setPage(value);
-            window.scroll(0, 450);
-          }}
-        />
+      count={Math.floor((handleSearch()?.length / 10))}
+      className="pagination-root"
+      classes={{
+        ul: 'pagination-root',
+        item: 'MuiPaginationItem-root',
+        selected: 'Mui-selected',
+        disabled: 'Mui-disabled',
+      }}
+      onChange={(_, value) => {
+        setPage(value);
+        window.scroll(0, 450);
+      }}
+    />
       </Container>
     </ThemeProvider>
   );
