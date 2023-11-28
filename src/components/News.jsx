@@ -213,8 +213,11 @@ const News = () => {
       <div className={classes.logoContainer}>
         {newsArticles.length ? (
           <div className={classes.infoContainer}>
-            <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Open article number [4]</Typography></div>
-            <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Go back</Typography></div>
+            {/* <div className={classes.card}>
+              <Typography variant="h5" component="h2">Try saying: <br /><br />Open article number [4]
+              </Typography>
+              </div>
+            <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Go back</Typography></div> */}
           </div>
         ) : null}
         {/* <img src="https://voicebot.ai/wp-content/uploads/2019/10/alan.jpg" className={classes.alanLogo} alt="logo" /> */}

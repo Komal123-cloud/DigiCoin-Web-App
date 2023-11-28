@@ -60,7 +60,7 @@ const Homepage = () => {
    
       
       
-   <Typography.Title level={2} className='home-title animated-text' styles={{color: '#3498db'}}>
+   <Typography.Title color='white' level={2} className='home-title animated-text'>
     Top Crypto Players
 </Typography.Title>
         <Title level={3} className='show-more'><Link to="/cryptocurrencies">Show More</Link></Title>

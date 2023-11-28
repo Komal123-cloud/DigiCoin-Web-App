@@ -170,7 +170,7 @@ export default function UserSidebar() {
                         <div className={classes.coin}>
                           <span>{coin.name}</span>
                           <span style={{ display: "flex", gap: 8 }}>
-                            {symbol}{" "}
+                            {"$"}
                             {numberWithCommas(coin.current_price.toFixed(2))}
                             <AiFillDelete
                               style={{ cursor: "pointer" }}
