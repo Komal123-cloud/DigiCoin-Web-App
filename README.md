@@ -69,6 +69,9 @@ Cryptocurrency Price Prediction Model:
 
 In exploring future trends within the cryptocurrency domain, the utilization of advanced predictive models, such as the Random Forest Regressor, emerges as a pivotal avenue for forecasting market movements. The application of this model holds promise in deciphering evolving patterns and trends in Bitcoin and other cryptocurrencies. The Random Forest Regressor, known for its robustness in handling large datasets and capturing complex relationships between variables, offers an opportunity to enhance our understanding of future price dynamics. Leveraging historical price data, trading volumes, sentiment analysis, and technical indicators, this model enables us to forecast potential market trajectories with a degree of accuracy. By harnessing the Random Forest Regressor's capabilities, we aim to glean insights into the nuanced intricacies of cryptocurrency markets, thereby empowering investors and stakeholders with informed decision-making tools to navigate the ever-evolving landscape of digital assets.
 
+![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/3e3939bd-af78-4b63-8307-7dee7f837faa)
+
+
 
 
 
