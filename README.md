@@ -63,6 +63,13 @@ News Page (Alan AI API): ![image](https://github.com/Komal123-cloud/DigiCoin-Web
 
 News Page: ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/44a218a1-c1a0-4dc3-bbe2-c315f59a07e8)
 
+#### Future Work
+
+Cryptocurrency Price Prediction Model:
+
+In exploring future trends within the cryptocurrency domain, the utilization of advanced predictive models, such as the Random Forest Regressor, emerges as a pivotal avenue for forecasting market movements. The application of this model holds promise in deciphering evolving patterns and trends in Bitcoin and other cryptocurrencies. The Random Forest Regressor, known for its robustness in handling large datasets and capturing complex relationships between variables, offers an opportunity to enhance our understanding of future price dynamics. Leveraging historical price data, trading volumes, sentiment analysis, and technical indicators, this model enables us to forecast potential market trajectories with a degree of accuracy. By harnessing the Random Forest Regressor's capabilities, we aim to glean insights into the nuanced intricacies of cryptocurrency markets, thereby empowering investors and stakeholders with informed decision-making tools to navigate the ever-evolving landscape of digital assets.
+
+
 
 
 
