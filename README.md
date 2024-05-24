@@ -39,6 +39,36 @@ CHART.JS
 
 ALAN AI
 
+IMPLEMENTATION: 
+
+Login Page:![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/861ef1b2-ebf8-410c-bcf7-68050dc51c3d)
+
+Signup Page:![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/5f970065-3b26-455d-ad2a-6e6f47bcf17b)
+
+Google Login Page: ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/9a54dade-4aaa-4488-89e2-18bf4a986ebe)
+
+HomePage: ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/385b85e3-fc0e-4992-88d2-d650ad9baf45)
+
+Watchlist: ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/599a1434-d420-43fa-aa22-0a8003867898)
+
+CoinTable Page: ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/86b9afbe-6578-4f62-b880-2cc2afb41074)![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/a00b3374-2f8e-40c0-acef-01700b2835ee)
+
+Charts Page: ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/1443105b-b88d-423d-8c24-13a9165428fc)
+
+Added to watchlist: ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/4db5dfbf-4b5f-491a-b557-bec64cd2332c)
+
+Search Cryptocurrency: ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/132b946c-7967-4015-a9e2-69d778ba5d4a)
+
+News Page (Alan AI API): ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/4c464c9a-ed00-4837-bde4-2147e2288ec6)
+
+News Page: ![image](https://github.com/Komal123-cloud/DigiCoin-Web-App/assets/118128960/44a218a1-c1a0-4dc3-bbe2-c315f59a07e8)
+
+
+
+
+
+
+
 
 
 
